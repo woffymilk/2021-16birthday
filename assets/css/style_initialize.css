@@ -1,0 +1,758 @@
+
+
+/*------------------------------*/
+/*          $Navbar
+--------------------------------*/
+/* 移除 bootstrap navbar 樣式 */
+.navbar {
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0;
+  background-color: #f0f0f0;
+}
+/* 主導覽列 樣式 回饋效果 */
+.navbar-nav li a{
+  color: #202020;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.nav li a:focus,.nav li a:hover{
+  background-color: transparent;
+}
+/* Logo 圖片大小調整 */
+.navbar-brand{
+  height: auto;
+  padding: 5px 5px;
+}
+.navbar-brand img{
+  max-width: 100%;
+}
+/* bootsnav的搜尋列 */
+.top-search .btn-empty{
+  display: inline-block;
+  padding: 0;
+  width: 1%;
+  background-color: transparent;
+  border-width: 0;
+}
+.top-search input{
+  display: inline-block;
+  width: calc(100% - 40px);
+}
+.top-search{
+  background-color: #202020;
+  padding: 10px 0;
+  display: none;
+}
+.top-search input.form-control{
+  background-color: transparent;
+  border: none;
+  -webkit-box-shadow: 0 0 0;
+  -o-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+  color: #f0f0f0;
+}
+.top-search .input-group-addon{
+  padding: 6px 0;
+  background-color: transparent;
+  border: none;
+  color: #f0f0f0;
+  overflow: hidden;
+  width: 15px;
+}
+.top-search .input-group-addon.close-search{
+  cursor: pointer;
+  display: inline-block;
+}
+/* 購物車下拉選單 */
+.cart_list table tr td {
+  min-width: 80px;
+  vertical-align: middle;
+  text-align: center;
+}
+.cart_list table tr td a img{
+  width: 90%;
+}
+/* 手機板搜尋按鈕ICON */
+.navbar-search-xs{
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.navbar-search-xs a{
+  color:rgb(51, 51, 51);
+}
+.navbar-header .attr-nav{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*------------------------------*/
+/*    $Slideshow & Topbanner
+--------------------------------*/
+/* 修改Bootstrap3 輪播圖片自適應大小 */
+.carousel-inner>.item img{
+  width: 100%;
+}
+/* 內頁的靜態上方海報 */
+.top_banner > img{
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+/*------------------------------*/
+/*          $Globalpage
+--------------------------------*/
+/* 會員中心、商品頁、最新消息上下留白，左右吃bootstrap container*/
+.member-wrapper,.contact-wrapper,
+.category-wrapper,.search-wrapper,
+.product-wrapper,.news-wrapper{
+  padding: 36px 0;
+  min-height: 600px;
+}
+
+/*------------------------------*/
+/*     $Sidebar & breadcrumbs
+--------------------------------*/
+/* 側邊導覽列標題樣式 */
+#LinkContainer,ul.breadcrumb,.nav_cate_current,.categoriesbar,.aside-title,.newsbar{
+  margin: 0;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  font-size: 17px;
+}
+/* 有些include把breadcrumb當標題用所以必須對齊，E.X. B_category_best_sell.asp */
+ul.breadcrumb{
+  margin: 20px 15px 20px 15px;
+  padding: 7px 10px;
+}
+/* 隱藏側邊導覽列母標題 */
+.nav .nav_cate_current{
+  display: none;
+}
+/* 側邊導覽列列表樣式 */
+aside .nav li a,.headlinecate a,.headlinecate0 a{
+  font-size: 15px;
+  color: #202020;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+/* 商品頁、商品清單列，側邊導覽列 回饋效果 */
+aside .nav li a:hover,aside .nav li a:focus{
+  background-color: #202020;
+  color: #f0f0f0;
+}
+/* 移除左側新聞類別項目符號 */
+/* 移除各遊覽器ul預設樣式，Chrom、Firfox、Edge已測試都會推padding-start:40px; */
+/* 並移除Bootstrap 預設樣式 */
+.NEWS_type{
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+/* 最新消息 側邊導覽列列表間距 */
+.NEWS_type li{
+  position: relative;
+}
+.NEWS_type li a{
+  display: block;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+.NEWS_type li img{
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.NEWS_type li span{
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* 最新消息ICON置中對齊 */
+.headlinecate img,.headlinecate0 img{
+  margin-bottom: 4px;
+}
+/* 類別和數字的間格 */
+.headlinecate a,.headlinecate0 a{
+  padding: 0 4px;
+}
+/* 麵包削列文字表樣式 */
+ol.breadcrumb li a{
+  font-size: 15px;
+  color: #202020;
+  text-decoration: none;
+}
+/* News的麵包削不顯示 */
+#LinkContainer{
+  margin: 0 15px;
+  padding: 7px 10px;
+  display: none;
+  background-color: #f0f0f0;
+}
+#LinkContainer a{
+  color: #202020;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/*------------------------------*/
+/*    $Productlist
+--------------------------------*/
+/* 商品瀏覽方式 回饋效果 */
+#myTab a .btn-default{
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+#myTab a .btn-default:hover,#myTab a .btn-default:focus{
+  background-color: #202020;
+  color: #f0f0f0;
+}
+/* 商品列表設定 */
+.thumbnail-list li{
+  width: calc(100% / 3);
+}
+@media (max-width: 992px){
+  .thumbnail-list li{
+    width: calc(100% / 2);
+  }
+}
+@media (max-width: 544px){
+  .thumbnail-list li{
+    width: 100%;
+  }
+}
+/* 列表頁圖片控制 */
+/* 設定為控制圖片長寬比例 */
+.imgBox-fit{
+	padding-top: 100%;
+	position: relative;
+	overflow: hidden;
+}
+/* 如果圖片太寬或太長，會等比縮圖 */
+.image-pic{
+	width: auto !important; /*因為系統會影響圖片寬度，所以強制這邊做設定才不會變形*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
+	max-width: 100%;
+	max-height: 100%;
+}
+/* 商品詳細介紹 回饋效果 */
+.li-item .features-box a.btn-default{
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.li-item .features-box a.btn-default:hover,
+.li-item .features-box a.btn-default:focus{
+  background-color: #202020;
+  color: #f0f0f0;
+}
+/* 移除點擊商品類別後，多出來的<br>標籤 */
+#category_descr + br {
+  display: none;
+  visibility: hidden;
+  overflow: hidden;
+  font-size: 0;
+}
+/* 移除無連結商品名稱與商品資訊，P.S.Html5 語意化有問題未修復 */
+.features-box .view > .mask{
+  display: none;
+}
+/* 商品頁的商品名稱 */
+.features-box > .view >.mask > h2,
+.features-box > a > h4{
+  font-size: 16px;
+}
+/* 商品頁的商品名稱 回饋效果 */
+.features-box > a{
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.features-box > a:hover,.features-box > a:focus{
+  color: #202020;
+}
+
+/* 商品頁的商品簡介 */
+.features-box > .view >.mask > p.prd_info,
+.features-box > p.prd_info{
+  font-size: 12px;
+}
+/* 移除浮動屬性避免，跑出.features-box 外(跑版) */
+.features-box > .product-price{
+  float: none;
+}
+
+
+/*------------------------------*/
+/*    $Product
+--------------------------------*/
+/* 產品二十圖預設標題樣式 */
+.brinfo h1{
+  margin: 0 0 20px 0;
+  font-size: 26px;
+}
+.brinfo h3{
+  margin: 0 0 12px 0;
+  font-size: 14px;
+}
+/* 避免二十圖按鈕不能被點擊 */
+.fotorama__nav-wrap{
+  position: absolute;
+  bottom: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/* 手機的商品圖片與商品標題避免重疊 */
+#prod_img{
+  margin-bottom: 20px;
+}
+/* 商品圖片會跑版原因是系統style設定圖片為position: absolute;
+外面包裹的div.zoomWrapper沒有設定position: relative; */
+.zoomWrapper{
+  margin: auto;
+  position: relative;
+}
+/* 設定過後就可以恢復img100% */
+#prod_img img{
+  width: 100%;
+}
+
+/* 左側文字與水平分割線的部分 */
+#prod_intro h1{
+  margin-top: 0;
+}
+.title-none{
+  margin: 0;
+  font-size: 26px;
+}
+.input-qty-detail h3{
+  margin: 0;
+}
+.descri-none{
+  font-size: 18px;
+}
+.intro-none hr{
+  margin: 18px auto;
+}
+.ProductName{
+  margin-top: 0;
+}
+.CodeNum,.PersonNum{
+  font-size: 14px;
+  text-align: left;
+}
+/* 數量字體調整 */
+dt{
+  font-weight: normal;
+}
+/* 若商品屬性不需要到下一行，可直接刪除.iteminfo_parameter dt 樣式*/
+.iteminfo_parameter dt{
+  width: 100% !important;
+}
+.iteminfo_parameter{
+  margin: 0;
+}
+/* 商品頁，商品數量輸入form會覆蓋放大鏡，bootstrap按鈕層級問題修復 */
+.input-group-btn:last-child>.btn,
+.input-group-btn:last-child>.btn-group,
+.input-group .form-control{
+  z-index: 0;
+}
+/* 商品頁數量寬度調整 */
+.btn-buy,.btn-inquiry{
+  margin: 0 5px 5px 0;
+}
+/* 關聯產品 / 加購產品，文字內距調整與分散對齊 */
+.products-wrapper .grid figcaption,
+.product-wrapper .grid figcaption{
+  padding: 8px 0;
+}
+.products-wrapper .grid figcaption span,
+.product-wrapper .grid figcaption span{
+  display: inline-block;
+  text-align: justify;
+}
+
+/*------------------------------*/
+/*          $Newslist
+--------------------------------*/
+/* 文章標題名稱 */
+.news_title{
+  font-size: 20px;
+  margin: 0 0 12px 0;
+}
+/* 避免浮動圖片超出 */
+.newslist{
+  overflow: hidden;
+}
+/* 調整預覽圖位址與大小 */
+.newslist img.news_pic {
+  width: 40%;
+  float: left;
+  padding: 1%;
+}
+@media (max-width: 767px){
+  .newslist img.news_pic {
+    width: 100%;
+    float: left;
+    padding: 1%;
+  }
+}
+/* 文章相關敘述 */
+.caption p{margin-bottom:10px;}
+/* icon調整間距 */
+.news_date,.news_sort,.news_author{margin-right: 10px;}
+/* icon大小調整 */
+.news_icon01,.news_icon02,.news_icon03
+{max-width: 16px;max-height: 16px;margin-right: 4px;}
+/* 繼續閱讀按鈕位置調整 */
+.news_more {
+  float: right;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+/* 繼續閱讀按鈕 回饋效果 */
+.news_more:hover,.news_more:focus{
+  background-color: #202020;
+  color: #f0f0f0;
+}
+/* 最新消息分頁 樣式 回饋效果 */
+.pagination li a{
+  color: #202020;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.pagination>li>a:focus,.pagination>li>a:hover{
+  background-color: #202020;
+  color: #f0f0f0;
+  border: #202020 1px solid;
+}
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover{
+  border-color: transparent;
+  color: #f0f0f0;
+  background-color: #202020;
+}
+
+
+
+/*------------------------------*/
+/*            $News
+--------------------------------*/
+/* 文章標題名稱 */
+h2.news_title{
+  padding:  0px 15px;
+  margin: 18px 0;
+  font-size: 30px;
+}
+/* 貼文資訊ICON，為了排版逼不得已～! */
+.news-wrapper>.container>.row>.col-sm-9>.row>p{
+  padding-left: 15px;
+}
+
+/*------------------------------*/
+/*       $EditModeLayout
+--------------------------------*/
+/* 商品頁、最新消息頁，編輯模式-純文字 */
+.GoodsDescrBody2 .alltext,.alltext{
+  text-align: justify;
+  color: #202020;
+  font-size: 17px;
+  line-height: 32px;
+  letter-spacing: 0.6px;
+}
+/* 商品頁、最新消息頁，編輯模式-上圖下文，P.S.預設樣式*/
+.arti-news{
+  margin: 0 15px;
+}
+.arti-news p{
+  text-align: justify;
+  color: #202020;
+  font-size: 17px;
+  line-height: 32px;
+  letter-spacing: 0.6px;
+}
+.arti-news > img{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width:100%;
+}
+/* 商品頁、最新消息頁，編輯模式-圖文交錯，P.S.預設樣式*/
+.article-content{
+  margin: 0 -15px;
+}
+.article-content .Pro_content p{
+  text-align: justify;
+  color: #202020;
+  font-size: 17px;
+  line-height: 32px;
+  letter-spacing: 0.6px;
+}
+.article-content .Pro_content img{
+  width: 100%;
+  height:auto;
+  margin: 8px 0 0;
+}
+/* 商品頁、最新消息頁，編輯模式-左圖右文，P.S.預設樣式*/
+.article-content .Pro_content2 p{
+  text-align: justify;
+  color: #202020;
+  font-size: 17px;
+  line-height: 32px;
+  letter-spacing: 0.6px;
+}
+.article-content .Pro_content2 img{
+  width: 100%;
+  height:auto;
+  margin: 8px 0 0;
+}
+/* 最新消息頁，編輯模式-左圖右文 */
+.news_content{
+  margin: 0 15px;
+}
+/* 每一商品描述內容間距 */
+.Pro_content,.Pro_content2{
+  margin-bottom: 24px;
+}
+/* 產品頁影片播放網址視窗 */
+.product-wrapper iframe,
+.product-wrapper iframe{
+  margin: 16px auto; width: 100%;
+}
+
+/*------------------------------*/
+/*     $Checkout & Inquiry
+--------------------------------*/
+/* 標題：我的購物車 */
+h1.MYCART_TITLE {
+  margin:24px auto !important;
+  color: rgb(0, 0, 0) !important;
+}
+/* 店家資訊與網址 */
+.STORE_INFO{
+  display: none;
+}
+
+/* 清單圖片統一大小，不設最大寬度會有500px的方形圖片 */
+tr.PRD_LIST td img{
+  width: 100%;
+  max-width: 200px;
+}
+
+/* 送出詢價單按鈕 */
+#BUY_SELECT{
+  text-align: right;
+}
+
+/*------------------------------*/
+/*           $Gototop
+--------------------------------*/
+#gotop.gotop{
+  padding: 4px 14px;
+  font-size: 30px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+
+}
+
+#gotop.gotop span.fa {
+  display: block;
+  text-align: center;
+  padding: 0px;
+  margin: -3px;
+}
+#gotop.gotop:hover{
+  background: rgba(0,0, 0, 0.8)
+}
+
+/*------------------------------*/
+/*           $Utilities
+--------------------------------*/
+/* 最新消息列表頁、商品列表頁、側邊導覽列，文字多於一行以...表示 */
+.nav_cate_item a,
+.headlinecate,.headlinecate0,
+.features-box .view .mask p.prd_info,
+.features-box .view .mask h2,
+.features-box a h4,
+.features-box p.prd_info{
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+/*------------------------------*/
+/*     $ProductRecommend
+--------------------------------*/
+/* 好康推薦1、好康推薦2、好康推薦3、好康推薦4、好康推薦5，文字多於一行以...表示 */
+.B_Prod_Slide3 .view .mask h2,
+.B_Prod_Slide3 .view .mask p,
+.B_Prod_Slide3 .col-item .info h5,
+.B_Prod_Slide4 .view .mask h2,
+.B_Prod_Slide4 .view .mask p,
+.B_Prod_Slide4 .col-item .info h5,
+.B_hot_3 .view .mask h2,
+.B_hot_3 .view .mask p,
+.B_hot_3 .li-item  a h4,
+.B_hot_3 .li-item  a p,
+.B_hot_4 .caption h3,
+.B_category_best_sell .view .mask h2,
+.B_category_best_sell .view .mask p{
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+/* 好康推薦1、好康推薦2、好康推薦3、好康推薦4 標題 */
+.B_Prod_Slide4 h3,
+.B_Prod_Slide3 h3,
+.B_hot_3 .page-header h1,
+.B_hot_4 .page-header h1{
+  margin: 10px 0;
+  font-size: 32px;
+}
+/* 好康推薦1、好康推薦2 商品名稱 */
+.B_Prod_Slide4 .view .mask h2,
+.B_Prod_Slide3 .view .mask h2{
+  margin: 10px auto;
+  text-align: center;
+  font-size: 20px;
+}
+/* 好康推薦1、好康推薦2 商品簡介 */
+.B_Prod_Slide4 .view .mask p,
+.B_Prod_Slide3 .view .mask p{
+  text-align: center;
+  font-size: 14px;
+}
+/* 好康推薦1、好康推薦2、好康推薦3 細節 */
+.B_Prod_Slide4 .view .mask .info,
+.B_Prod_Slide3 .view .mask .info,
+.B_hot_3 .view .mask .info{
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+/* 好康推薦1、好康推薦2 標題、價錢和詳細介紹 */
+.B_Prod_Slide4 .col-item .info,
+.B_Prod_Slide3 .col-item .info{
+  margin: 0 auto;
+  text-align: center;
+}
+.B_Prod_Slide4 .col-item .info h5,
+.B_Prod_Slide3 .col-item .info h5{
+  padding: 4px;
+}
+/* 分割線 */
+.B_Prod_Slide4 .col-item .separator,
+.B_Prod_Slide3 .col-item .separator{
+  border-top: 1px solid #202020;
+}
+/* 好康推薦1、好康推薦2 詳細介紹 */
+.B_Prod_Slide4 .info .separator .btn-details,
+.B_Prod_Slide3 .info .separator .btn-details{
+  float: none;
+  display: block;
+  margin: 0 auto;
+  padding: 8px;
+}
+/* 好康推薦1、好康推薦2 移除框線 */
+.B_Prod_Slide4 .col-item:hover .info,
+.B_Prod_Slide3 .col-item:hover .info{
+  border: 0 solid transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+}
+/* 好康推薦1、好康推薦2 清除多一層.row */
+.B_Prod_Slide4 > .container > .row,
+.B_Prod_Slide3 > .container > .row{
+  margin: 0;
+}
+
+/* 好康推薦3、好康推薦4，標題對齊 */
+.page-header {
+  padding: 0 0 9px;
+  margin: 40px 15px 20px;
+  border-bottom: 1px solid #202020;
+}
+/* 好康推薦3，標題與商品對齊 */
+.B_hot_3 .thumbnail-list li{
+  padding: 4px;
+}
+/* 好康推薦3、好康推薦4 商品名稱 */
+.B_hot_3 .view .mask h2,
+.B_hot_4 .caption h3{
+  margin: 10px auto;
+  font-size: 20px;
+}
+
+/*------------------------------*/
+/*          $translate
+--------------------------------*/
+/* 下拉式選單樣式 */
+#google_translate_element .goog-te-gadget-simple {
+  background-color: transparent;
+  border: 0;
+  font-size: 10pt;
+  padding: 0;
+}
+#google_translate_element .goog-te-combo {
+  width: auto !important;
+  height: auto;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+}
+/* _google翻譯內文字字型 */
+.goog-te-combo,
+.goog-te-banner *,
+.goog-te-ftab *,
+.goog-te-menu *,
+.goog-te-menu2 *,
+.goog-te-balloon *{
+  font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "標楷體", DFKai-SB, sans-serif !important;
+}
+/* Google logo icon */
+#google_translate_element .skiptranslate{
+  display: none;
+}
+
+/*------------------------------*/
+/*          $contact
+--------------------------------*/
+.panel-heading{
+  padding: 0;
+  padding-bottom: 15px;
+}
+.panel-title2 .label{
+  font-size: 19px;
+  line-height: 2;
+  background-color: transparent;
+  padding: 0;
+  color: #202020;
+}
+.panel-title2{
+  font-size: 19px;
+  line-height: 1.4;
+  margin: 0;
+}
+.img-rounded{
+  margin: auto;
+}
