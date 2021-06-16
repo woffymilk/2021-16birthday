@@ -262,13 +262,12 @@ ul {
     width: 900px;
     border-radius: 25px;
     display: none;
-    margin-top: 100px;
+    margin-top: 50px;
     box-shadow: 8px 8px 15px rgb(0 0 0 / 80%);
 }
 
 #card img.up {
     width: 500px;
-    margin-top: 50px;
 }
 
 #close {
