@@ -51,7 +51,7 @@ ul {
     background: url(../../images/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0 120%;
+    background-position: 0 140%;
     width: 1920px;
     height: 1080px;
     position: absolute
@@ -78,7 +78,7 @@ ul {
     position: relative;
     transform: rotateX(50deg);
 
-    height: 1000px
+    height: 700px
 }
 
 .photo {
