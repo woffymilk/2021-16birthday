@@ -1,0 +1,347 @@
+@charset "utf-8";
+
+body {
+    color: #f08100;
+    letter-spacing: 2px;
+    overflow: hidden
+}
+
+a {
+    color: #f08100
+}
+
+a:hover {
+    text-decoration: none
+}
+
+h2 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: 600
+}
+
+/*------------------------------*/
+/*          $Reset
+--------------------------------*/
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*------------------------------*/
+/*          $Fonts
+--------------------------------*/
+/* 中文、日文字元用 */
+@font-face {
+    font-family: "微軟正黑體";
+    src: local("微軟正黑體");
+    unicode-range: U+2E80-2FDF, U+3400-9FE6, U+20000-2B81D, U+3040-30FF;
+}
+
+/* 拉丁、英文字元用 */
+@font-face {
+    font-family: "Arial";
+    src: local("Arial");
+    unicode-range: U+0000-024F;
+}
+
+.bg {
+    background: url(../../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 120%;
+    width: 1920px;
+    height: 1080px;
+    position: absolute
+}
+
+.center {
+    position: relative;
+    width: 100%;
+    height: 100%
+}
+
+.black {
+
+    width: 100%;
+        height: 1080px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    display: none
+}
+
+.container {
+    position: relative;
+    transform: rotateX(50deg);
+
+    height: 1000px
+}
+
+.photo {
+    box-shadow: 8px 8px 15px rgb(0 0 0 / 40%);
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.photo.inactive {
+    filter: brightness(0.7);
+    filter: blur(2);
+}
+
+.photo img {
+    width: 280px;
+    transition: all .3s ease
+}
+
+.photo.up img {
+    width: 240px
+}
+
+.photo:hover {
+    z-index: 5
+}
+
+.photo:hover img {
+    width: 290px
+}
+
+.photo.up:hover img {
+    width: 250px
+}
+
+.seven {
+    top: 610px;
+    left: 970px;
+    transform: rotateZ(344deg);
+}
+
+.carry {
+    top: 120px;
+    left: 520px;
+    transform: rotateZ(9deg);
+}
+
+.liko {
+    top: 140px;
+    left: 260px;
+    transform: rotateZ(355deg);
+}
+
+.mio {
+    top: 290px;
+    left: 680px;
+    transform: rotateZ(6deg);
+}
+
+.suzie {
+    top: 690px;
+    left: 720px;
+    transform: rotateZ(349deg);
+}
+
+.woffy {
+    top: 100px;
+    left: 700px;
+    transform: rotateZ(351deg);
+}
+
+.naiyi {
+    top: 400px;
+    left: 500px;
+    transform: rotateZ(351deg);
+}
+
+.nine {
+    top: 260px;
+    left: 60px;
+    transform: rotateZ(344deg);
+}
+
+.neil {
+    top: 600px;
+    left: 620px;
+    transform: rotateZ(6deg);
+}
+
+.joy {
+    top: 550px;
+    left: 890px;
+    transform: rotateZ(12deg);
+}
+
+.light {
+    top: 540px;
+    left: 260px;
+    transform: rotateZ(346deg);
+}
+
+.and {
+    top: 80px;
+    left: 170px;
+    transform: rotateZ(353deg);
+}
+
+.tree {
+    top: 160px;
+    left: 920px;
+    transform: rotateZ(6deg);
+}
+
+.maggie {
+    top: 320px;
+    left: 350px;
+    transform: rotateZ(14deg);
+}
+
+.momo {
+    top: 560px;
+    left: 460px;
+    transform: rotateZ(6deg);
+}
+
+.P13P04 {
+    top: 350px;
+    left: 900px;
+    transform: rotateZ(353deg);
+}
+
+.haru {
+    top: 450px;
+    left: 720px;
+    transform: rotateZ(357deg);
+}
+
+.nio {
+    top: 280px;
+    left: 220px;
+    transform: rotateZ(6deg);
+}
+
+.bian {
+    top: 500px;
+    left: 50px;
+    transform: rotateZ(351deg);
+}
+
+.bird {
+    top: 780px;
+    left: 330px;
+    transform: rotateZ(352deg);
+}
+
+.card-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#card {
+    text-align: center;
+
+    position: relative;
+    z-index: 100;
+    display: none;
+    width: 900px;
+    margin: 0 auto;
+
+}
+
+#card:hover {
+    cursor: grab
+}
+
+#card img {
+    width: 900px;
+    border-radius: 25px;
+    display: none;
+    margin-top: 100px;
+    box-shadow: 8px 8px 15px rgb(0 0 0 / 80%);
+}
+
+#card img.up {
+    width: 500px;
+    margin-top: 50px;
+}
+
+#close {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: white;
+    color: black;
+    font-weight: 600;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    z-index: 10;
+    font-size: 28px;
+    margin-top: -10px;
+    text-align: center;
+    border: solid 5px black;
+    padding-left: 2px;
+    display: none;
+    transition: all .3s ease
+}
+
+#close:hover {
+    background: black;
+    color: white
+}
+
+
+.word {
+    background: black;
+    width: 180px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -50px;}
+.word p{
+    color: white;
+}
+@media screen and (max-width:1200px) {
+    .photo img {
+        width: 210px
+    }
+
+    .photo.up img {
+        width: 160px
+    }
+    
+.photo:hover img {
+    width: 230px
+}
+
+.photo.up:hover img {
+    width: 180px
+}
+    .container {
+        width: 1150px;
+    }
+
+    .bg {
+        background-position: 0 160%;
+    }
+
+    .container {
+        height: 350px
+    }
+
+    .seven {
+        top: 670px;
+        left: 880px;
+        transform: rotateZ(344deg);
+    }
+}
