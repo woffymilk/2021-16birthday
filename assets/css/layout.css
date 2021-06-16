@@ -259,7 +259,7 @@ ul {
 }
 
 #card img {
-    width:780px;
+    width:820px;
     border-radius: 25px;
     display: none;
     margin-top: 50px;
@@ -267,7 +267,7 @@ ul {
 }
 
 #card img.up {
-       width: 400px;
+       width: 450px;
     margin-top: 30px;
 }
 
@@ -307,7 +307,7 @@ ul {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -50px;}
+    bottom: -65px;}
 .word p{
     color: white;
 }
@@ -320,6 +320,15 @@ ul {
 
     .bg {
         background-position: 0 160%;
+    }
+    #card img {
+        width: 780px
+    }
+    #card img.up {
+        width: 400px
+    }
+    .word{
+        bottom: -50px
     }
     
 }
